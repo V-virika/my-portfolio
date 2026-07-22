@@ -53,7 +53,7 @@ export default function Hero() {
                   </span>
                 </div>
                 <span className="text-xs text-[#64748b] font-mono font-semibold mt-0.5">
-                  DSU CSE (Data Science) • <span className="text-[#b45309] font-bold">9.42 CGPA</span>
+                  DSU CSE (Data Science) • <span className="text-[#b45309] font-bold">2022–2026</span>
                 </span>
               </motion.div>
             </div>

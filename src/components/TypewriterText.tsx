@@ -2,27 +2,39 @@
 
 import { useState, useEffect } from 'react';
 
-const words = [
-  'Data Science & Software Engineer.',
-  'Vision Transformers & Deep Learning.',
-  'Financial AI & Risk Analytics.',
-  'Dayananda Sagar University • 9.42 CGPA.',
-];
-
 export default function TypewriterText() {
+  const phrases = [
+    'Data Science & Analytics Engineer.',
+    'Vision Transformers & Deep Learning.',
+    'Full-Stack Web App Developer.',
+    'Dayananda Sagar University CSE.',
+  ];
+
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
+  const [blink, setBlink] = useState(true);
 
+  // Blinking cursor effect
   useEffect(() => {
-    if (subIndex === words[index].length + 1 && !reverse) {
-      const timeout = setTimeout(() => setReverse(true), 2000);
+    const timeout = setTimeout(() => {
+      setBlink((prev) => !prev);
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [blink]);
+
+  // Typewriter typing logic
+  useEffect(() => {
+    if (subIndex === phrases[index].length + 1 && !reverse) {
+      const timeout = setTimeout(() => {
+        setReverse(true);
+      }, 1800);
       return () => clearTimeout(timeout);
     }
 
     if (subIndex === 0 && reverse) {
       setReverse(false);
-      setIndex((prev) => (prev + 1) % words.length);
+      setIndex((prev) => (prev + 1) % phrases.length);
       return;
     }
 
@@ -34,12 +46,16 @@ export default function TypewriterText() {
     );
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
+  }, [subIndex, index, reverse, phrases]);
 
   return (
-    <span className="inline-block font-bold text-[#1e3a8a] min-h-[1.4em]">
-      {words[index].substring(0, subIndex)}
-      <span className="inline-block w-1.5 h-6 ml-1 bg-[#1e3a8a] animate-pulse align-middle" />
+    <span className="inline-flex items-center">
+      <span>{phrases[index].substring(0, subIndex)}</span>
+      <span
+        className={`ml-1 inline-block w-0.5 h-7 sm:h-9 bg-[#b45309] ${
+          blink ? 'opacity-100' : 'opacity-0'
+        } transition-opacity duration-100`}
+      />
     </span>
   );
 }

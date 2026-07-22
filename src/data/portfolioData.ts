@@ -17,7 +17,7 @@ export const PERSONAL_INFO = {
   resumePdf: '/resume.pdf',
   bio: 'I am a results-driven technology enthusiast with expertise in Python, SQL, data analytics, and software development. Skilled in designing and implementing efficient solutions, analyzing complex datasets, and developing applications that drive informed decision-making. Experienced in data processing, database management, and software engineering principles, with a strong foundation in problem-solving, algorithmic thinking, and delivering quality technical solutions.',
   stats: [
-    { label: 'CGPA Score', value: '9.42' },
+    { label: 'Engineering Projects', value: '6+' },
     { label: 'AI Accuracy Peak', value: '96.4%' },
     { label: 'Expo Award', value: '1st Place' },
     { label: 'Research Papers', value: '3 Published' },

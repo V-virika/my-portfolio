@@ -63,15 +63,12 @@ export default function About() {
                 <p className="text-xs text-[#475569] font-semibold mt-1">{PERSONAL_INFO.degree}</p>
               </div>
 
-              <div className="w-full pt-3 border-t border-[#e2e8f0] flex items-center justify-between text-xs font-bold">
-                <span className="text-[#475569]">Dayananda Sagar University</span>
-                <span className="px-2.5 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 font-extrabold font-mono">
-                  CGPA 9.42
-                </span>
+              <div className="w-full pt-3 border-t border-[#e2e8f0] flex items-center justify-center text-xs font-bold text-[#475569]">
+                <span>Dayananda Sagar University (2022 – 2026)</span>
               </div>
             </motion.div>
 
-            {/* Education Card */}
+            {/* Academic Credentials Card - ONLY PLACE WHERE CGPA LIVES */}
             <motion.div
               whileHover={{ y: -6, rotateX: 3, scale: 1.02 }}
               className="bg-[#faf9f6] border border-[#e2e8f0] p-6 rounded-2xl shadow-sm hover:shadow-lg hover:border-[#b45309]/50 transition-all cursor-default"

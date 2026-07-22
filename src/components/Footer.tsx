@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowUp, Mail, Heart } from 'lucide-react';
+import { ArrowUp, Heart, Terminal } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '@/components/icons';
 import { PERSONAL_INFO } from '@/data/portfolioData';
 
@@ -10,26 +10,29 @@ export default function Footer() {
   };
 
   return (
-    <footer className="border-t border-[#e8e4d9] bg-[#f6f4ee] text-[#71717a] py-12 relative z-10">
+    <footer className="bg-white border-t border-[#e2e8f0] text-[#0f172a] py-10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Left info */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-1">
-            <p className="text-sm font-bold text-[#0f172a] tracking-wide">
-              Virika Olivia Soans
-            </p>
-            <p className="text-xs text-[#71717a] font-mono font-medium">
-              B.Tech CS &amp; Engineering (Data Science) • Dayananda Sagar University (CGPA 9.42)
-            </p>
+          {/* Brand */}
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-[#0f172a] flex items-center justify-center text-white shadow-sm">
+              <Terminal className="w-5 h-5 text-amber-400" />
+            </div>
+            <div>
+              <h3 className="font-extrabold text-base text-[#0f172a]">Virika Olivia Soans</h3>
+              <p className="text-xs text-[#64748b] font-medium">
+                B.Tech CS &amp; Engineering (Data Science) • Dayananda Sagar University
+              </p>
+            </div>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex items-center gap-4">
+          {/* Quick links & Back to Top */}
+          <div className="flex items-center gap-5">
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-white border border-[#e8e4d9] text-[#475569] hover:text-[#0f172a] hover:border-[#0f172a] shadow-2xs transition-all"
+              className="text-[#475569] hover:text-[#0f172a] transition-colors p-2 rounded-lg bg-[#faf9f6] border border-[#e2e8f0]"
               aria-label="GitHub"
             >
               <GithubIcon className="w-4 h-4" />
@@ -38,33 +41,24 @@ export default function Footer() {
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg bg-white border border-[#e8e4d9] text-[#475569] hover:text-[#b45309] hover:border-[#b45309] shadow-2xs transition-all"
+              className="text-[#475569] hover:text-[#b45309] transition-colors p-2 rounded-lg bg-[#faf9f6] border border-[#e2e8f0]"
               aria-label="LinkedIn"
             >
               <LinkedinIcon className="w-4 h-4" />
             </a>
-            <a
-              href={`mailto:virika06@gmail.com`}
-              className="p-2 rounded-lg bg-white border border-[#e8e4d9] text-[#475569] hover:text-[#b45309] hover:border-[#b45309] shadow-2xs transition-all"
-              aria-label="Email"
-            >
-              <Mail className="w-4 h-4" />
-            </a>
-          </div>
 
-          {/* Right Back-to-top */}
-          <div className="flex items-center gap-3">
-            <span className="text-xs text-[#71717a] font-mono font-medium">
-              &copy; {new Date().getFullYear()} Virika Olivia Soans
-            </span>
             <button
               onClick={scrollToTop}
-              className="p-2.5 rounded-xl bg-white border border-[#e8e4d9] text-[#475569] hover:text-[#0f172a] hover:bg-[#fcfbfa] hover:border-[#0f172a] shadow-2xs transition-all"
-              aria-label="Back to Top"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#0f172a] text-white text-xs font-bold hover:bg-[#1e293b] transition-all cursor-pointer shadow-sm"
             >
-              <ArrowUp className="w-4 h-4 text-[#b45309]" />
+              <span>Back to Top</span>
+              <ArrowUp className="w-3.5 h-3.5 text-amber-400" />
             </button>
           </div>
+        </div>
+
+        <div className="mt-8 pt-6 border-t border-[#e2e8f0] text-center text-xs text-[#64748b] font-medium">
+          <p>© {new Date().getFullYear()} Virika Olivia Soans. Crafted with precision &amp; Next.js.</p>
         </div>
       </div>
     </footer>
