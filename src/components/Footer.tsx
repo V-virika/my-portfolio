@@ -21,7 +21,7 @@ export default function Footer() {
             <div>
               <h3 className="font-extrabold text-base text-[#0f172a]">Virika Olivia Soans</h3>
               <p className="text-xs text-[#64748b] font-medium">
-                B.Tech CS &amp; Engineering (Data Science) • Dayananda Sagar University
+                B.Tech CS &amp; Engineering (Data Science)
               </p>
             </div>
           </div>

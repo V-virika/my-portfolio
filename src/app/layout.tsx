@@ -21,14 +21,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Virika Olivia Soans | Data Science & Software Engineer',
   description:
-    'Portfolio of Virika Olivia Soans - B.Tech in CSE (Data Science) graduate from Dayananda Sagar University. Specializing in Vision Transformers, Deep Learning, Financial AI, and Modern Web Development.',
+    'Portfolio of Virika Olivia Soans - B.Tech in CSE (Data Science) graduate. Specializing in Vision Transformers, Deep Learning, Financial AI, and Modern Web Development.',
   keywords: [
     'Virika Olivia Soans',
     'Data Science',
     'Software Engineer',
     'Vision Transformers',
     'Deep Learning',
-    'Dayananda Sagar University',
     'Swin Transformer',
     'AI Risk Analysis',
     'Portfolio',

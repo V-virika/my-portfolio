@@ -7,7 +7,7 @@ export default function TypewriterText() {
     'Data Science & Analytics Engineer.',
     'Vision Transformers & Deep Learning.',
     'Full-Stack Web App Developer.',
-    'Dayananda Sagar University CSE.',
+    'B.Tech CSE (Data Science).',
   ];
 
   const [index, setIndex] = useState(0);

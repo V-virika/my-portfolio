@@ -64,11 +64,11 @@ export default function About() {
               </div>
 
               <div className="w-full pt-3 border-t border-[#e2e8f0] flex items-center justify-center text-xs font-bold text-[#475569]">
-                <span>Dayananda Sagar University (2022 – 2026)</span>
+                <span>B.Tech CSE (Data Science) • 2022–2026</span>
               </div>
             </motion.div>
 
-            {/* Academic Credentials Card - ONLY PLACE WHERE CGPA LIVES */}
+            {/* Academic Credentials Card - EXCLUSIVE PLACE FOR UNIVERSITY NAME */}
             <motion.div
               whileHover={{ y: -6, rotateX: 3, scale: 1.02 }}
               className="bg-[#faf9f6] border border-[#e2e8f0] p-6 rounded-2xl shadow-sm hover:shadow-lg hover:border-[#b45309]/50 transition-all cursor-default"

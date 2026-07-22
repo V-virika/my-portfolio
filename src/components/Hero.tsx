@@ -53,7 +53,7 @@ export default function Hero() {
               </motion.div>
             </div>
 
-            {/* Main Greeting & Dynamic Typewriter Headline */}
+            {/* Main Greeting & Degree Subtitles */}
             <motion.div
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function Hero() {
                 Hi, I&apos;m <span className="highlight-gold text-[#b45309]">Virika Olivia Soans</span>
               </h1>
 
-              {/* Academic & Degree Subtitles */}
+              {/* Degree Subtitles without University Name */}
               <div className="space-y-1 pt-1">
                 <p className="text-lg sm:text-xl font-bold text-[#b45309] font-mono">
                   Data Science &amp; Software Engineering Fresher
@@ -73,7 +73,7 @@ export default function Hero() {
                   B.Tech in Computer Science &amp; Engineering (Data Science)
                 </p>
                 <p className="text-sm sm:text-base font-semibold text-[#475569] font-mono">
-                  Dayananda Sagar University (2022 – 2026)
+                  2022 – 2026
                 </p>
               </div>
 
