@@ -36,24 +36,19 @@ export default function Hero() {
                 </div>
               </motion.div>
 
-              {/* Status Badge */}
+              {/* Status Badge - Only Availability Text */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex flex-col justify-center px-4 py-2 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm hover:border-[#b45309]/50 transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-white border border-[#e2e8f0] shadow-sm hover:border-[#b45309]/50 transition-all"
               >
-                <div className="flex items-center gap-2">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600" />
-                  </span>
-                  <span className="text-xs font-bold tracking-wide text-[#0f172a]">
-                    Available for Data Analytics, AI &amp; Software Engineering Roles
-                  </span>
-                </div>
-                <span className="text-xs text-[#64748b] font-mono font-semibold mt-0.5">
-                  DSU CSE (Data Science) • <span className="text-[#b45309] font-bold">2022–2026</span>
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600" />
+                </span>
+                <span className="text-xs font-bold tracking-wide text-[#0f172a]">
+                  Available for Data Analytics, AI &amp; Software Engineering Roles
                 </span>
               </motion.div>
             </div>
@@ -63,11 +58,27 @@ export default function Hero() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
+              className="space-y-2"
             >
               <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-[#0f172a] leading-[1.1]">
                 Hi, I&apos;m <span className="highlight-gold text-[#b45309]">Virika Olivia Soans</span>
               </h1>
-              <div className="text-xl sm:text-3xl font-bold tracking-tight text-[#1e3a8a] mt-3 sm:mt-4 min-h-[1.5em]">
+
+              {/* Academic & Degree Subtitles */}
+              <div className="space-y-1 pt-1">
+                <p className="text-lg sm:text-xl font-bold text-[#b45309] font-mono">
+                  Data Science &amp; Software Engineering Fresher
+                </p>
+                <p className="text-base sm:text-lg font-bold text-[#0f172a]">
+                  B.Tech in Computer Science &amp; Engineering (Data Science)
+                </p>
+                <p className="text-sm sm:text-base font-semibold text-[#475569] font-mono">
+                  Dayananda Sagar University (2022 – 2026)
+                </p>
+              </div>
+
+              {/* Dynamic Typewriter Line */}
+              <div className="text-lg sm:text-2xl font-bold tracking-tight text-[#1e3a8a] pt-2 min-h-[1.5em]">
                 <TypewriterText />
               </div>
             </motion.div>
