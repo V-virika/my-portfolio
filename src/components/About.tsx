@@ -41,7 +41,7 @@ export default function About() {
             transition={{ type: 'spring', stiffness: 90, damping: 14 }}
             className="lg:col-span-5 space-y-5"
           >
-            {/* Profile Avatar Card */}
+            {/* Clean Profile Avatar Card */}
             <motion.div
               whileHover={{ y: -6, rotateX: -3, scale: 1.02 }}
               className="bg-[#faf9f6] border border-[#e2e8f0] p-6 rounded-2xl flex flex-col items-center text-center space-y-4 shadow-sm hover:shadow-lg hover:border-[#b45309]/50 transition-all cursor-default"
@@ -59,16 +59,11 @@ export default function About() {
 
               <div>
                 <h3 className="text-xl font-bold text-[#0f172a]">{PERSONAL_INFO.name}</h3>
-                <p className="text-xs font-bold text-[#b45309] font-mono mt-0.5">{PERSONAL_INFO.title}</p>
-                <p className="text-xs text-[#475569] font-semibold mt-1">{PERSONAL_INFO.degree}</p>
-              </div>
-
-              <div className="w-full pt-3 border-t border-[#e2e8f0] flex items-center justify-center text-xs font-bold text-[#475569]">
-                <span>B.Tech CSE (Data Science) • 2022–2026</span>
+                <p className="text-xs font-bold text-[#b45309] font-mono mt-1">{PERSONAL_INFO.title}</p>
               </div>
             </motion.div>
 
-            {/* Academic Credentials Card - EXCLUSIVE PLACE FOR UNIVERSITY NAME */}
+            {/* Academic Credentials Card */}
             <motion.div
               whileHover={{ y: -6, rotateX: 3, scale: 1.02 }}
               className="bg-[#faf9f6] border border-[#e2e8f0] p-6 rounded-2xl shadow-sm hover:shadow-lg hover:border-[#b45309]/50 transition-all cursor-default"
