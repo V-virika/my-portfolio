@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Virika Olivia Soans' }],
   openGraph: {
-    title: 'Virika Olivia Soans | Data Science & Software Engineer',
+    title: 'Virika Olivia Soans | AIML, Data Science & Software Engineer',
     description:
       'Bridging Artificial Intelligence, Analytics, and Modern Web Development. Explore projects in Vision Transformers, Explainable AI, and Healthcare.',
     type: 'website',
